@@ -1,5 +1,6 @@
-import LogoSection from "./components/LogoSection"
+import LogoSection from "./sections/LogoSection"
 import NavBar from "./components/NavBar"
+import FeaturedCards from "./sections/FeaturedCards"
 import Hero from "./sections/Hero"
 import ShowCaseSection from "./sections/ShowCaseSection"
 
@@ -10,6 +11,7 @@ const App = () => {
             <Hero />
             <ShowCaseSection />
             <LogoSection />
+            <FeaturedCards />
         </>
     )
 }

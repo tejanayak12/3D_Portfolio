@@ -68,7 +68,7 @@ const ShowCaseSection = () => {
                             <div className='image-wrapper bg-[#ffefdb]'>
                                 <img src="/images/hrrd.png" alt="hrrd" />
                             </div>
-                            <h2>Full Stack Job Portal for Job Seekers & Recruiters</h2>
+                            <h2>Full Stack Job Portal for Recruiters</h2>
                         </a>
 
                         <a
