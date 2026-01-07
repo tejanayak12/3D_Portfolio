@@ -61,14 +61,14 @@ const Hero = () => {
                         </p>
                         <Button
                             className="md:w-80 md:h-16 w-60 h-12"
-                            id="button"
+                            targetId="work"
                             text="See My Work"
                         />
                     </div>
                 </header>
                 {/** right side : 3d model */}
                 <figure>
-                    <div className="hero-3d-layout border-red-200">
+                    <div className="hero-3d-layout">
                         <HeroExperience />
                     </div>
                 </figure>
