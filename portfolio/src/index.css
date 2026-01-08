@@ -7,16 +7,15 @@
 
 html,
 body {
-  width: 100dvw;
+  width: 100%;
   overflow-x: hidden;
   background-color: black;
   color: white;
   font-family: "Mona Sans", sans-serif;
-  scroll-behavior: smooth;
 }
 
 section {
-  width: 100dvw;
+  width: 100%;
   scroll-margin-top: 100px;
 }
 
@@ -448,7 +447,7 @@ section {
   border-radius: 12px;
   border: 2px solid transparent;
   background: var(--gradient);
-  background-attachment: fixed;
+  /* background-attachment: fixed removed for scroll performance */
   mask: linear-gradient(#0000, #0000),
     conic-gradient(from calc((var(--start) - 15) * 1deg),
       #ffffff1f 0deg,
@@ -468,8 +467,8 @@ section {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  filter: blur(10px);
-  filter: saturate(200);
+  filter: blur(5px);
+  filter: saturate(150);
 }
 
 .card:hover::before {

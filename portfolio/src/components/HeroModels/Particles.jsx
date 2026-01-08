@@ -19,13 +19,16 @@ const Particles = ({ count = 200 }) => {
     return temp;
   }, [count]);
 
-  useFrame(() => {
+  useFrame((state) => {
     const positions = mesh.current.geometry.attributes.position.array;
-    for (let i = 0; i < count; i++) {
-      let y = positions[i * 3 + 1];
+    const count_internal = count;
+
+    for (let i = 0; i < count_internal; i++) {
+      let idx = i * 3 + 1;
+      let y = positions[idx];
       y -= particles[i].speed;
       if (y < -2) y = Math.random() * 10 + 5;
-      positions[i * 3 + 1] = y;
+      positions[idx] = y;
     }
     mesh.current.geometry.attributes.position.needsUpdate = true;
   });

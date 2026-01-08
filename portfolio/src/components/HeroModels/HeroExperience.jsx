@@ -14,8 +14,14 @@ const HeroExperience = () => {
     return (
         <Canvas
             camera={{ position: [0, 0, 15], fov: 45 }}
-            dpr={[1, 2]} // limit pixel ratio for performance
-            gl={{ antialias: true, alpha: true, powerPreference: "high-performance" }}
+            dpr={[1, 1.5]} // slightly reduced max dpr for better performance on high-res screens
+            gl={{
+                antialias: false, // Disabling antialias can significantly boost performance
+                alpha: true,
+                powerPreference: "high-performance",
+                stencil: false,
+                depth: true
+            }}
         >
             <Suspense fallback={<CanvasLoader />}>
                 <AdaptiveDpr pixelated />
@@ -31,7 +37,7 @@ const HeroExperience = () => {
 
                 <HeroLights />
 
-                <Particles count={isMobile ? 200 : 500} />
+                <Particles count={isMobile ? 100 : 300} />
 
                 <group
                     scale={isMobile ? 0.7 : 1}

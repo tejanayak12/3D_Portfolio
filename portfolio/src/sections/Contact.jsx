@@ -21,8 +21,7 @@ const Contact = () => {
         setLoading(true);
 
         try {
-            // Using Formspree - this will forward messages to your email
-            // I've set up a placeholder, you should replace 'mknpzzzb' with your own ID from formspree.io
+
             const response = await fetch('https://formspree.io/f/mknpzzzb', {
                 method: 'POST',
                 headers: {
@@ -75,7 +74,7 @@ const Contact = () => {
             </div>
 
             <div className="relative flex items-center justify-center flex-col md:mt-20 mt-10">
-                <div className="contact-container w-full max-w-2xl bg-black-100 border border-black-50 p-8 md:p-12 rounded-[2rem] relative z-10 backdrop-blur-sm">
+                <div className="contact-container w-full max-w-2xl bg-black-100 border border-black-50 p-8 md:p-12 rounded-[2rem] relative z-10">
                     <p className="text-lg md:text-xl text-white-50 mb-10 leading-relaxed font-mona">
                         Have a project in mind or just want to say hi? I'd love to hear from you.
                         Fill out the form below and I'll get back to you as soon as possible.
@@ -141,8 +140,8 @@ const Contact = () => {
                     </form>
                 </div>
 
-                {/* Decorative background glow */}
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[500px] bg-blue-50/5 blur-[120px] rounded-full pointer-events-none" />
+                {/* Optimized background decoration */}
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[500px] bg-blue-50/5 rounded-full pointer-events-none" />
             </div>
         </section>
     );
