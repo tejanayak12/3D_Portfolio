@@ -162,7 +162,7 @@ const expCards = [
         imgPath: "https://trangla.com/assets/imgs/trangla-logo.png?v1",
         logoPath: "https://trangla.com/assets/imgs/trangla-logo.png?v1",
         title: "Frontend Developer",
-        date: "January 2022 - Present",
+        date: "August 2022 - Present",
         responsibilities: [
             "Developed and maintained user-facing features for the Hostinger website.",
             "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
